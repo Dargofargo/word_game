@@ -1,7 +1,5 @@
 var $ = function(id) {
-
 return document.getElementById(id);
-
 }
 
 var game = ["eat", "sleep", "code", "repeat"]
@@ -88,7 +86,7 @@ document.getElementById("guesses").innerHTML ="YOU WIN!!!";
 
 else if (attemptsLeft < 1)
 
-}
+{
 
 document.getElementById("guesses").innerHTML ="YOU LOSE!!!";
 
@@ -106,7 +104,11 @@ document.getElementById("guesses").innerHTML ="You have " + attemptsLeft + " gue
 
 
 window.onload = function()
+
 {
+
 setup();
+
 $("submit").onclick = submit;
+
 }
